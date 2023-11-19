@@ -1,0 +1,5 @@
+This tool is used to enum the user names majorly in samba and windows machine
+
+cmd - enum4linux -a ip_addr
+
+https://www.kali.org/tools/enum4linux/

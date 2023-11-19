@@ -1,0 +1,6 @@
+hash-identifier tool: to identify the type of hash
+
+hash-cat mode can be found hash cat manual/ document
+https://hashcat.net/wiki/doku.php?id=example_hashes
+
+hash:salt to decrypt the file

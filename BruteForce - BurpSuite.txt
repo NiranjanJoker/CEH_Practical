@@ -1,0 +1,29 @@
+This is the easiest method to bruteforce when you have the wordlist.
+
+first intercept the http req for the login form of wordpress website using the burpsuite.
+
+
+Then move it to the intruder tab. (ctrl +  I)
+
+Then select the payload.
+
+first give clear all.
+
+then select username and click add to set as an payload.
+then the same for the password.
+
+set the attack type as cluster bomb
+
+after this, 
+
+Go to the payload tab
+
+select payload set 1:
+
+and add the payload file : which is the worlist.
+
+then the payload set 2:
+
+once all this done. give Start Attack.
+
+this will do all the possible combinations and give you a result of it. analyse it. check for the status code "302".

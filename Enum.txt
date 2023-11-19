@@ -1,0 +1,94 @@
+SSH:
+Port No: 22
+
+
+FTP:
+Port no: 21
+*nmap command: nmap -sC -p 21 ip_add/cidr
+
+then, cmd: 	
+		ftp ip_add
+
+exit: command to exit
+
+use hydra to bruteforce, hydra -h : gives u the manual
+
+hydra -L "wordlist path" -P "password.txt path" ip_address ftp
+
+hydra -l user -P passlist.txt ftp://10.10.249.51
+
+/usr/share/wordlists/metasploit/
+
+to connect ftp:
+
+ftp ip-addr
+
+
+download the remote file into local file
+
+ls
+get filename :- this cmd will download the file in ur local machine
+
+SNMP:
+Port No: 161
+snmp-check ip_addr
+
+get the scripts to run and check from: nsedoc scripts. google it
+(snmp-process script)
+-sU - udp scan, snmp runs in udp
+
+msfconsole: 
+
+search snmp
+
+use module_name_give (snmp_login module)
+
+show options :- command gives options to set
+
+set RHOSTS ip_addr
+
+exploit
+
+
+
+SMB:
+Port No: 445/tcp
+nmap smb-enum-shares cmd search in the nsedoc
+
+go to the files app in parrot and go to the network, there in the search box delete network and write
+
+smb://ip_addr/
+
+this will as for the username and password
+brute force it with hydra as shown in ftp, just replace ftp tp smb
+
+smb-enum-users
+
+
+RDP:
+Port: 3389
+
+first check the open ports using nmap
+then find any port number 3333 
+same as SNMP use metasploit
+msfconsole -q
+
+search rdp
+select the scanner/rdp/rdp_scanner using use cmd
+set rhosts and rport to port that u find 
+
+hydra to bruteforce login:
+
+hydra -L wordlist path -P password.txt path rdp://ip_addr -s port_number
+
+
+rdp tool to connect a session:
+
+xfreerdp /u:user_name /p:password /v:ip_addr:port
+
+this gives us the remote desktop connection											
+
+NetBIO enum:
+Port: 137/138/139
+
+nmap -sV --script nbstat.nse ip_addr

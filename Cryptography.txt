@@ -1,0 +1,43 @@
+1. HashMyFiles:
+
+This tools helps to calculate the hashes of the files and compare the hashes of the files with other files to check if the file is tampered or not.
+
+Just take the files and paste it in the HashMyFiles tool, it will provide the hashes of the file and compare them.
+
+
+2. CryptoForge tool:
+
+This tools is used to lock the files with the passkey or password.
+
+After installing this tool, it will show the options to encrypt and decrypt by right clicking the file and enter the password
+
+
+3. BCTextEncoder utility:
+
+This tool will encode and decode the txt. You can also provide the password at the time of encoding. so the password must be used to decode the encoded text
+
+
+4. CrypTool:
+
+This tool is used to encrypt and decrypt the HEX file.
+
+After opening the hex file in cryptool, go to the Analysis tab in the tool bar. Then select the appropriate encryption algorithm use and the key length used.
+
+After doing this. we will get the decrypted msg in the first line.
+
+5. VeraCrypt:
+
+This tool is used to encrypt/ decrypt the hidden partition.
+
+There will be a File of type File. This file will be used to create a hidden partitioner (both inner and outer partition).
+
+Open the veracrypt tool and click any drive you want to mount on the secret partition. Then select files "File" and press the mount button.
+
+This will then ask for the password.
+
+If u give the password of the outer partition. the outer partition will show.
+
+else if u give the password of the inner partition. the inner will open.
+
+and the other is kept hidden and secret.
+

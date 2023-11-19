@@ -1,0 +1,7 @@
+Curl cmd to change the user-agent:
+
+cmd:
+
+	curl -A "user-agent" -L ip_adr
+
+-A allows us to spoof the user agent and -L follows any redirects.

@@ -1,0 +1,39 @@
+(Very imp) sudo -l : this command to check the perimissions of the current user
+
+ls -la : to list of all the hidden files.
+
+sudo su: to change to root user.
+
+status 301 must be considered
+
+
+use the website version and name to find the exploits or cve.
+Use exploit db to find the exploits and run the exploit.py
+
+
+To find a file in a terminal use this cmd:
+
+find / -type f -name file_name 2>/dev/null
+
+
+
+Use GTFObins to find exploit or cmds
+
+
+To sort and filter the uniq files:
+
+sort filename | uniq > filename
+
+> - this operator is used to output the filtered result in the existing file
+
+------------------------------------------------------------------
+
+Use scp cmd to copy the file from ssh machine to local:
+
+write this cmd in ur local machine.
+cmd :
+	scp username@ip_addr:file_path /destination_path/
+
+__________________________________________________________________
+
+echo "Content to write" > file_path
