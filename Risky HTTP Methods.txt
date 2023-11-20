@@ -1,0 +1,3 @@
+nmap -p- --script http-methods ip_addr
+
+this cmd gives you the risky methods found in that website

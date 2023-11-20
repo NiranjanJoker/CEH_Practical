@@ -1,0 +1,15 @@
+Go the PhoneSploit dir:
+
+python3 -m pip install colorama
+
+to run the tool:
+
+python3 phonesploit.py
+
+enter mobile ip address
+-----------------------------------------------------
+access shell on a phone:
+
+device name : ip_addr
+
+p to move to next page on the options

@@ -1,0 +1,29 @@
+some commands in meterpreter:
+
+getuid or getsystem: this will get the current user using it.
+
+sysinfo: gives the system info
+
+run post/multi/recon/local_exploit_suggester:
+
+it tests exploits and find the exploit which we can use.
+
+let's background our current session using the command `background` or `CTRL + z`
+
+change between sessions are go to the session:
+
+Interact with it now using the command:
+
+	 `sessions SESSION_NUMBER`
+
+we have expanded permissions using the command 
+
+		`getprivs`
+
+list the processes using the command 
+
+	`ps`
+
+Migrate to this process now with the command 
+
+	`migrate -N PROCESS_NAME`

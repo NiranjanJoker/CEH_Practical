@@ -1,0 +1,55 @@
+To Break the encrypted key file.
+
+When you take the id_rsa file from the ssh. If the private key file is encrypted. You have to first find the passphrase for that key.
+
+So the steps to do it..
+
+Copy that id_rsa file into ur local machine.
+
+find the ssh2john.py file in the local machine 
+
+run this file to convert the key into a hash:
+
+		python file_path/john/ssh2john.py id_rsa > id_rsa.hash
+
+ex:
+		python /usr/share/john/ssh2john.py id_rsa > id_rsa.hash
+
+Once converted into hash, Now we need to break it.
+
+	file_path/john --wordlist=<path> id_rsa.hash
+
+Ex:
+	/usr/sbin/john --wordlist=/root/Desktop/dict/rockyou.txt id_rsa.hash
+
+this will give the passphrase.
+
+Now you can get into the ssh as the same way using privelage escalation.
+
+ssh kay@ip_addr -i id_rsa 
+
+After this enter the pass phrase to get the access..
+
+---------------------------------------------------------------------------------------------------------------
+
+If you know the type of the hash:
+You can crack it using the:
+ cmd:
+
+	john --format=type file_name
+ex:
+
+	john --format=raw-md5 password.raw-md5
+
+----------------------------------------------------------------------------------------------------------------
+To break the encrypted the zip file:
+
+cmd :
+
+	zip2john file_name > filename_name.hash
+
+	john --wordlist=path filename.hash
+
+------------------------------------------------------------------
+For gpg file:
+use gpg2john

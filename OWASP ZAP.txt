@@ -1,0 +1,5 @@
+This tools allows u to crawl through the web application or websites hidden pages or pages which are invisible. 
+
+Use the automated scan for web spidering any website.
+
+This helps to indentify any vulnerabilities in the website

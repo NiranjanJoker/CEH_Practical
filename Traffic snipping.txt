@@ -1,0 +1,35 @@
+wireshark
+
+filters:
+tcp.flags.syn==1
+http
+
+following the stream:
+
+follow -> stream:
+check the stream either tcp or http
+move from 1 stream to another, in the right bottom corner
+
+
+txt filter:
+
+file -> export objects -> http -> text filters
+
+
+capture file properties:
+capture file comments
+
+search strings:
+
+ctrl + f
+
+DDOS Detection:
+
+statistics -> Conversations -> ipv4
+
+DOS - IP that is having the large bytes size
+
+DDOS - group of ips that have large bytes siize
+
+
+

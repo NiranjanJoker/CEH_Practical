@@ -1,0 +1,13 @@
+Vertical Privilege escalation:
+
+To find the files with root perimission.
+
+cmd: 
+	find / -type f -perm -4000 2> /dev/null
+
+Use tools like:
+
+Linenum.sh
+linpeas.sh
+
+These will provide the files.

@@ -1,0 +1,27 @@
+Hacking Web server
+Ghost_Eye:
+ go to the ghost_eye folder and python ghost_eye.py
+
+test for clickjacking 
+-------------------------------------------------------
+Telnet: Banner Grabing of a web server
+
+telnet <url> <port_numer>(80)
+
+GET / HTTP/1.0
+--------------------------------------------------------
+nse:
+
+--script http-waf-detect
+--script http-enum
+
+--------------------------------------------------------------
+Hashcalc:
+
+This tool is used to calculate all kind of hashes of a file or data.
+
+----------------------------------------------------------------
+IIS (internet information services) Manager:
+
+This tool helps to create a self signed certificate to access the website
+

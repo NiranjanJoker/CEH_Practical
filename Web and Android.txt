@@ -1,0 +1,91 @@
+Command execution:
+
+some common cmds are like | piping, pwd to get the current working directory
+
+
+1. SQLMap : this tool is used to identify the SQL INJECTION vulnerability in the website. (parrot os - terminal tool)
+
+sqlmap -hh (advanced help)
+
+use cookies:
+to obtain the cookie... go to the inspect -> console -> enter "document.cookie"
+
+--cookie= "enter_cookie"
+
+(i) using url is get based method:
+
+sqlmap -u url_link --dbs
+
+-D - specifies the database
+
+-T - Table
+
+-C - column
+
+-p - states the vulnerable parameter to attack 
+
+
+-- tables, --columns :- lists out all the tables or columns
+
+(ii) using file for post based method.
+
+Burp Suite: 
+
+
+First get the http request file from the Burp Suite.
+save the http request as file.
+
+sqlmap -r <request_file> -p <vulnerable_parameter> --dbs
+
+then use the command:
+
+sqlmap -r txt_file --dbs
+
+this command gives the databases present
+
+check sqlmap -h to find the options
+
+next cmd:
+
+sqlmap -r text_file -D database_name --tables.
+
+--columns
+
+final cmd:
+
+sqlmap -r text_file -D db_name --dump
+
+
+This gives the username and password
+
+
+2. Wpscan:
+this a terminal tool.
+to scan the word press plugins
+
+
+wpscan --url given_url --enumerate u
+
+To enumerate username and password:
+
+
+
+this will enumerate the the user ids
+
+
+3. ADB:
+
+This tool bridges the connection from the android device to the PC.
+
+this is an windows tool. use it in windows powershell
+
+cmd
+
+adb devices
+
+adb connect ip_addr:port_num
+
+then: adb shell
+this cmd will take you to the shell of the android device
+
+ls, whoami
