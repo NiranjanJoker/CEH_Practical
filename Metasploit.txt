@@ -1,5 +1,7 @@
 some commands in meterpreter:
 
+shell: To create an shell
+
 getuid or getsystem: this will get the current user using it.
 
 sysinfo: gives the system info
