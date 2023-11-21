@@ -11,3 +11,14 @@ Linenum.sh
 linpeas.sh
 
 These will provide the files.
+
+
+------------------------------------------------------------------
+
+Here, the print.sh file is continously executed by the root:
+
+So we can edit the print.sh content to copy all the root directory files to home/user/ and give it th permission to access al the root files.
+
+cmd:
+
+echo "cp /root/* /home/user/; chmod 777 /home/user/*" >> print.sh

@@ -64,7 +64,7 @@ this a terminal tool.
 to scan the word press plugins
 
 
-wpscan --url given_url --enumerate u
+	wpscan --url given_url --enumerate u
 
 To enumerate username and password:
 

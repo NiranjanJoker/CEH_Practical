@@ -1,0 +1,9 @@
+First check the nmap output in ftp:
+
+Whether anonymous login is allowed or not, if allowed we can get through the ftp
+
+We can sign in ftp as:
+
+ftp anonymous@ip_addr
+
+password is blank
